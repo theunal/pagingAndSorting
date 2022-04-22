@@ -1,0 +1,722 @@
+2022-04-22 19:14:12.862  INFO 5080 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 5080 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:14:12.863  INFO 5080 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:14:12.898  INFO 5080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:14:12.898  INFO 5080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:14:13.632  INFO 5080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:14:13.666  INFO 5080 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:14:14.077  INFO 5080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:14:14.084  INFO 5080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:14:14.085  INFO 5080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:14:14.159  INFO 5080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:14:14.159  INFO 5080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1255 ms
+2022-04-22 19:14:14.238  INFO 5080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:14:14.518  INFO 5080 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:14:14.529  INFO 5080 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:14:14.618  INFO 5080 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:14:14.649  INFO 5080 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:14:14.741  INFO 5080 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:14:14.802  INFO 5080 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:14:15.164  INFO 5080 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:14:15.169  INFO 5080 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:14:15.377  WARN 5080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:14:15.802  WARN 5080 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:14:16.060  INFO 5080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:14:16.063  INFO 5080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:14:16.106  INFO 5080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:14:16.119  INFO 5080 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.558 seconds (JVM running for 4.174)
+2022-04-22 19:14:16.242  INFO 5080 --- [RMI TCP Connection(2)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:14:16.242  INFO 5080 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:14:16.243  INFO 5080 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:20:52.558  INFO 5080 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:20:52.560  INFO 5080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:20:52.566  INFO 5080 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:20:56.759  INFO 12500 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 12500 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:20:56.760  INFO 12500 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:20:56.794  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:20:56.794  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:20:57.541  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:20:57.575  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:20:57.986  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:20:57.992  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:20:57.993  INFO 12500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:20:58.072  INFO 12500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:20:58.072  INFO 12500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1277 ms
+2022-04-22 19:20:58.151  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:20:58.340  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:20:58.348  INFO 12500 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:20:58.445  INFO 12500 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:20:58.478  INFO 12500 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:20:58.576  INFO 12500 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:20:58.636  INFO 12500 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:20:58.987  INFO 12500 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:20:58.993  INFO 12500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:20:59.214  WARN 12500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:20:59.626  WARN 12500 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:20:59.871  INFO 12500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:20:59.875  INFO 12500 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:20:59.913  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:20:59.926  INFO 12500 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.441 seconds (JVM running for 4.042)
+2022-04-22 19:21:00.166  INFO 12500 --- [RMI TCP Connection(2)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:21:00.166  INFO 12500 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:21:00.168  INFO 12500 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:21:02.717  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:21:02.718  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:21:02.718  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:21:02.719  INFO 12500 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:21:53.658  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:21:53.658  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:21:53.659  INFO 12500 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:22:10.773  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:22:10.773  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:22:10.773  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:22:10.774  INFO 12500 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:28:49.284  INFO 12500 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:28:49.287  INFO 12500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:28:49.292  INFO 12500 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:28:53.257  INFO 11316 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 11316 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:28:53.258  INFO 11316 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:28:53.292  INFO 11316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:28:53.292  INFO 11316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:28:54.015  INFO 11316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:28:54.048  INFO 11316 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:28:54.462  INFO 11316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:28:54.467  INFO 11316 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:28:54.468  INFO 11316 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:28:54.546  INFO 11316 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:28:54.546  INFO 11316 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1253 ms
+2022-04-22 19:28:54.627  INFO 11316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:28:54.807  INFO 11316 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:28:54.814  INFO 11316 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:28:54.910  INFO 11316 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:28:54.941  INFO 11316 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:28:55.038  INFO 11316 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:28:55.102  INFO 11316 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:28:55.456  INFO 11316 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:28:55.463  INFO 11316 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:28:55.681  WARN 11316 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:28:56.109  WARN 11316 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:28:56.357  INFO 11316 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:28:56.361  INFO 11316 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:28:56.399  INFO 11316 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:28:56.413  INFO 11316 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.41 seconds (JVM running for 3.994)
+2022-04-22 19:28:56.694  INFO 11316 --- [RMI TCP Connection(1)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:28:56.694  INFO 11316 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:28:56.695  INFO 11316 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:29:35.015  INFO 11316 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:29:35.016  INFO 11316 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:29:35.016  INFO 11316 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:29:35.016  INFO 11316 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:29:35.016  INFO 11316 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:30:06.684  INFO 11316 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:30:06.684  INFO 11316 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:06.684  INFO 11316 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:06.684  INFO 11316 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:30:06.685  INFO 11316 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:30:12.473  INFO 11316 --- [http-nio-8080-exec-4] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:30:21.068  INFO 11316 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:21.068  INFO 11316 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:21.068  INFO 11316 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:30:21.068  INFO 11316 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:30:21.068  INFO 11316 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:30:38.229  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:30:38.230  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:30:38.230  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:30:38.230  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:30:38.230  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:30:38.230  INFO 11316 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:30:52.680  INFO 11316 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:52.680  INFO 11316 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:30:52.680  INFO 11316 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:30:52.680  INFO 11316 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:30:52.680  INFO 11316 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:31:03.225  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:31:03.225  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:31:03.225  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:31:03.226  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:31:03.226  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:31:03.226  INFO 11316 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:35:00.606  INFO 11316 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:35:00.608  INFO 11316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:35:00.614  INFO 11316 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:35:04.822  INFO 2424 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 2424 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:35:04.823  INFO 2424 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:35:04.858  INFO 2424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:35:04.858  INFO 2424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:35:05.582  INFO 2424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:35:05.614  INFO 2424 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:35:06.025  INFO 2424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:35:06.031  INFO 2424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:35:06.031  INFO 2424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:35:06.107  INFO 2424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:35:06.107  INFO 2424 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
+2022-04-22 19:35:06.184  INFO 2424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:35:06.363  INFO 2424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:35:06.369  INFO 2424 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:35:06.461  INFO 2424 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:35:06.490  INFO 2424 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:35:06.576  INFO 2424 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:35:06.639  INFO 2424 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:35:06.984  INFO 2424 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:35:06.990  INFO 2424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:35:07.195  WARN 2424 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:35:07.314  WARN 2424 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teacherController' method 
+com.unal.teacher.TeacherController#paging(int, int)
+to {GET [/paging/{page}/{size}]}: There is already 'teacherController' bean method
+com.unal.teacher.TeacherController#paging(int) mapped.
+2022-04-22 19:35:07.315  INFO 2424 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:35:07.317  INFO 2424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:35:07.322  INFO 2424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:35:07.325  INFO 2424 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-04-22 19:35:07.338  INFO 2424 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-22 19:35:07.362 ERROR 2424 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teacherController' method 
+com.unal.teacher.TeacherController#paging(int, int)
+to {GET [/paging/{page}/{size}]}: There is already 'teacherController' bean method
+com.unal.teacher.TeacherController#paging(int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.unal.TeacherSortingApplication.main(TeacherSortingApplication.java:15) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teacherController' method 
+com.unal.teacher.TeacherController#paging(int, int)
+to {GET [/paging/{page}/{size}]}: There is already 'teacherController' bean method
+com.unal.teacher.TeacherController#paging(int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 21 common frames omitted
+
+2022-04-22 19:35:29.490  INFO 9340 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 9340 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:35:29.491  INFO 9340 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:35:29.525  INFO 9340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:35:29.525  INFO 9340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:35:30.243  INFO 9340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:35:30.274  INFO 9340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:35:30.688  INFO 9340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:35:30.694  INFO 9340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:35:30.694  INFO 9340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:35:30.770  INFO 9340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:35:30.770  INFO 9340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1245 ms
+2022-04-22 19:35:30.849  INFO 9340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:35:31.033  INFO 9340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:35:31.040  INFO 9340 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:35:31.153  INFO 9340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:35:31.188  INFO 9340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:35:31.279  INFO 9340 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:35:31.339  INFO 9340 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:35:31.678  INFO 9340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:35:31.683  INFO 9340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:35:31.890  WARN 9340 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:35:32.314  WARN 9340 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:35:32.560  INFO 9340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:35:32.564  INFO 9340 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:35:32.601  INFO 9340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:35:32.614  INFO 9340 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.361 seconds (JVM running for 3.887)
+2022-04-22 19:35:32.978  INFO 9340 --- [RMI TCP Connection(1)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:35:32.978  INFO 9340 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:35:32.979  INFO 9340 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:35:39.793  INFO 9340 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:35:39.794  INFO 9340 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:35:39.794  INFO 9340 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:35:39.794  INFO 9340 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:35:39.794  INFO 9340 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:35:58.962  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:35:58.963  INFO 9340 --- [http-nio-8080-exec-9] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:36:02.570  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:36:02.570  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:36:02.570  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:36:02.570  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:36:02.571  INFO 9340 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:36:34.913  INFO 9340 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:36:34.916  INFO 9340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:36:34.922  INFO 9340 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:43:46.646  INFO 5716 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 5716 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:43:46.647  INFO 5716 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:43:46.679  INFO 5716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:43:46.680  INFO 5716 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:43:47.404  INFO 5716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:43:47.438  INFO 5716 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:43:47.850  INFO 5716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:43:47.855  INFO 5716 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:43:47.856  INFO 5716 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:43:47.934  INFO 5716 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:43:47.934  INFO 5716 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1254 ms
+2022-04-22 19:43:48.012  INFO 5716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:43:48.195  INFO 5716 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:43:48.202  INFO 5716 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:43:48.297  INFO 5716 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:43:48.328  INFO 5716 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:43:48.421  INFO 5716 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:43:48.485  INFO 5716 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:43:48.825  INFO 5716 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:43:48.830  INFO 5716 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:43:49.048  WARN 5716 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:43:49.476  WARN 5716 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:43:49.739  INFO 5716 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:43:49.744  INFO 5716 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:43:49.784  INFO 5716 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:43:49.797  INFO 5716 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.393 seconds (JVM running for 3.927)
+2022-04-22 19:43:50.156  INFO 5716 --- [RMI TCP Connection(2)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:43:50.157  INFO 5716 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:43:50.158  INFO 5716 --- [RMI TCP Connection(2)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:44:01.616  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:44:01.616  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:44:01.617  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:44:01.617  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:44:01.617  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:44:01.617  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:44:01.617  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:44:01.618  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:44:01.618  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:44:01.618  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:44:01.618  INFO 5716 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:44:46.055  INFO 5716 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:44:46.058  INFO 5716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:44:46.064  INFO 5716 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:44:50.251  INFO 11240 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 11240 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:44:50.253  INFO 11240 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:44:50.288  INFO 11240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:44:50.289  INFO 11240 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:44:51.028  INFO 11240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:44:51.061  INFO 11240 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:44:51.488  INFO 11240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:44:51.494  INFO 11240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:44:51.494  INFO 11240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:44:51.577  INFO 11240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:44:51.577  INFO 11240 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1288 ms
+2022-04-22 19:44:51.684  INFO 11240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:44:51.917  INFO 11240 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:44:51.924  INFO 11240 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:44:52.036  INFO 11240 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:44:52.071  INFO 11240 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:44:52.174  INFO 11240 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:44:52.237  INFO 11240 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:44:52.593  INFO 11240 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:44:52.599  INFO 11240 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:44:52.814  WARN 11240 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:44:53.276  WARN 11240 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:44:53.540  INFO 11240 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:44:53.544  INFO 11240 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:44:53.584  INFO 11240 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:44:53.597  INFO 11240 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.595 seconds (JVM running for 4.1)
+2022-04-22 19:44:53.687  INFO 11240 --- [RMI TCP Connection(3)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:44:53.687  INFO 11240 --- [RMI TCP Connection(3)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:44:53.689  INFO 11240 --- [RMI TCP Connection(3)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-04-22 19:44:57.057  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:44:57.057  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:44:57.057  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:44:57.058  INFO 11240 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:45:29.528  INFO 11240 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:45:29.531  INFO 11240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:45:29.535  INFO 11240 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:45:33.459  INFO 5296 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 5296 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:45:33.460  INFO 5296 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:45:33.494  INFO 5296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:45:33.494  INFO 5296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:45:34.214  INFO 5296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:45:34.245  INFO 5296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:45:34.663  INFO 5296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:45:34.668  INFO 5296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:45:34.669  INFO 5296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:45:34.744  INFO 5296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:45:34.744  INFO 5296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1250 ms
+2022-04-22 19:45:34.821  INFO 5296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:45:35.001  INFO 5296 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:45:35.007  INFO 5296 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:45:35.099  INFO 5296 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:45:35.131  INFO 5296 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:45:35.222  INFO 5296 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:45:35.285  INFO 5296 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:45:35.624  INFO 5296 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:45:35.629  INFO 5296 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:45:35.836  WARN 5296 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:45:36.249  WARN 5296 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:45:36.491  INFO 5296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:45:36.495  INFO 5296 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:45:36.534  INFO 5296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:45:36.547  INFO 5296 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.327 seconds (JVM running for 3.832)
+2022-04-22 19:45:36.965  INFO 5296 --- [RMI TCP Connection(1)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:45:36.966  INFO 5296 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:45:36.967  INFO 5296 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:45:38.802  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:45:38.803  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:45:38.803  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:45:38.804  INFO 5296 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:45:41.616  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:45:41.616  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:45:41.616  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:45:41.616  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:45:41.617  INFO 5296 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:50:56.814  INFO 5296 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:50:56.816  INFO 5296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:50:56.822  INFO 5296 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:51:01.031  INFO 7596 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 7596 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:51:01.032  INFO 7596 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-04-22 19:51:01.065  INFO 7596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:51:01.065  INFO 7596 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:51:01.806  INFO 7596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:51:01.839  INFO 7596 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:51:02.262  INFO 7596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:51:02.268  INFO 7596 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:51:02.268  INFO 7596 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-04-22 19:51:02.346  INFO 7596 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:51:02.346  INFO 7596 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1280 ms
+2022-04-22 19:51:02.427  INFO 7596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:51:02.609  INFO 7596 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:51:02.616  INFO 7596 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:51:02.714  INFO 7596 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:51:02.744  INFO 7596 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-04-22 19:51:02.838  INFO 7596 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:51:02.903  INFO 7596 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:51:03.249  INFO 7596 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:51:03.254  INFO 7596 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:51:03.467  WARN 7596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:51:03.886  WARN 7596 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:51:04.136  INFO 7596 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:51:04.140  INFO 7596 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:51:04.178  INFO 7596 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:51:04.191  INFO 7596 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.419 seconds (JVM running for 3.915)
+2022-04-22 19:51:04.460  INFO 7596 --- [RMI TCP Connection(4)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:51:04.460  INFO 7596 --- [RMI TCP Connection(4)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:51:04.461  INFO 7596 --- [RMI TCP Connection(4)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:51:11.071  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:51:11.072  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:51:11.072  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:51:11.073  INFO 7596 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:51:58.394  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:51:58.394  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:51:58.395  INFO 7596 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:52:01.710  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:52:01.711  INFO 7596 --- [http-nio-8080-exec-8] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:52:09.026 ERROR 7596 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.data.mapping.PropertyReferenceException: No property 'nid' found for type 'Teacher'! Did you mean ''id''?] with root cause
+
+org.springframework.data.mapping.PropertyReferenceException: No property 'nid' found for type 'Teacher'! Did you mean ''id''?
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.query.QueryUtils.toJpaOrder(QueryUtils.java:646) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.query.QueryUtils.toOrders(QueryUtils.java:599) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:798) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.getQuery(SimpleJpaRepository.java:779) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:459) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:87) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.4.jar:2.6.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174) ~[spring-data-jpa-2.6.4.jar:2.6.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.19.jar:5.3.19]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.19.jar:5.3.19]
+	at jdk.proxy3/jdk.proxy3.$Proxy124.findAll(Unknown Source) ~[na:na]
+	at com.unal.teacher.TeacherController.getPagingAndSortingAsc(TeacherController.java:200) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.62.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67) ~[spring-webmvc-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96) ~[spring-boot-actuator-2.6.7.jar:2.6.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.19.jar:5.3.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.62.jar:9.0.62]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-04-22 19:52:12.296  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:52:12.297  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:52:12.297  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:52:12.297  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:12.297  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:52:12.298  INFO 7596 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:52:25.126  INFO 7596 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:52:25.130  INFO 7596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:52:25.135  INFO 7596 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:52:42.189  INFO 13936 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 13936 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:52:42.190  INFO 13936 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to default profiles: default
+2022-04-22 19:52:42.225  INFO 13936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:52:42.225  INFO 13936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:52:43.030  INFO 13936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:52:43.067  INFO 13936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:52:43.494  INFO 13936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:52:43.501  INFO 13936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:52:43.501  INFO 13936 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-04-22 19:52:43.576  INFO 13936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:52:43.576  INFO 13936 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2022-04-22 19:52:43.653  INFO 13936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:52:43.856  INFO 13936 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:52:43.860  INFO 13936 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:52:43.962  INFO 13936 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:52:44.007  INFO 13936 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-04-22 19:52:44.114  INFO 13936 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:52:44.184  INFO 13936 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:52:44.610  INFO 13936 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:52:44.616  INFO 13936 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:52:44.839  WARN 13936 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:52:45.257  WARN 13936 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:52:45.501  INFO 13936 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:52:45.506  INFO 13936 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:52:45.545  INFO 13936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:52:45.558  INFO 13936 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.679 seconds (JVM running for 4.31)
+2022-04-22 19:52:46.060  INFO 13936 --- [RMI TCP Connection(1)-192.168.1.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:52:46.060  INFO 13936 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:52:46.061  INFO 13936 --- [RMI TCP Connection(1)-192.168.1.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:52:49.652  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:52:49.652  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:52:49.652  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:52:49.652  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:52:49.653  INFO 13936 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:53:14.265  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=9, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:02.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=8, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=7, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:54.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:53:14.266  INFO 13936 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:55:43.648  INFO 13936 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:55:43.657  INFO 13936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:55:43.663  INFO 13936 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-04-22 19:55:49.115  INFO 5828 --- [restartedMain] com.unal.TeacherSortingApplication       : Starting TeacherSortingApplication using Java 17.0.1 on DESKTOP-8HRQCRF with PID 5828 (C:\Users\Y\Desktop\teacherSorting\target\classes started by Y in C:\Users\Y\Desktop\teacherSorting)
+2022-04-22 19:55:49.116  INFO 5828 --- [restartedMain] com.unal.TeacherSortingApplication       : No active profile set, falling back to default profiles: default
+2022-04-22 19:55:49.149  INFO 5828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-22 19:55:49.149  INFO 5828 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-22 19:55:49.887  INFO 5828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-22 19:55:49.921  INFO 5828 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2022-04-22 19:55:50.318  INFO 5828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-04-22 19:55:50.324  INFO 5828 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-04-22 19:55:50.325  INFO 5828 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2022-04-22 19:55:50.401  INFO 5828 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-04-22 19:55:50.401  INFO 5828 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1251 ms
+2022-04-22 19:55:50.473  INFO 5828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-04-22 19:55:50.669  INFO 5828 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-04-22 19:55:50.672  INFO 5828 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/techcareer'
+2022-04-22 19:55:50.768  INFO 5828 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-22 19:55:50.797  INFO 5828 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2022-04-22 19:55:50.878  INFO 5828 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-22 19:55:50.946  INFO 5828 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-04-22 19:55:51.293  INFO 5828 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-22 19:55:51.300  INFO 5828 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:55:51.516  WARN 5828 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-22 19:55:51.933  WARN 5828 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-04-22 19:55:52.171  INFO 5828 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-04-22 19:55:52.176  INFO 5828 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-22 19:55:52.213  INFO 5828 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-22 19:55:52.226  INFO 5828 --- [restartedMain] com.unal.TeacherSortingApplication       : Started TeacherSortingApplication in 3.391 seconds (JVM running for 4.07)
+2022-04-22 19:55:52.249  INFO 5828 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-22 19:55:52.249  INFO 5828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-04-22 19:55:52.250  INFO 5828 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-04-22 19:55:52.383  INFO 5828 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:55:52.384  INFO 5828 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:55:52.384  INFO 5828 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:55:52.384  INFO 5828 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:55:52.384  INFO 5828 --- [http-nio-8080-exec-1] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:55:57.645  INFO 5828 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:55:57.645  INFO 5828 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:55:57.645  INFO 5828 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:55:57.646  INFO 5828 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:55:57.646  INFO 5828 --- [http-nio-8080-exec-2] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:03.434  INFO 5828 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=1, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:28.0)
+2022-04-22 19:56:03.435  INFO 5828 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=2, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:50.0)
+2022-04-22 19:56:03.435  INFO 5828 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=3, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:51.0)
+2022-04-22 19:56:03.435  INFO 5828 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:03.435  INFO 5828 --- [http-nio-8080-exec-3] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:13.923  INFO 5828 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=10, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:15:05.0)
+2022-04-22 19:56:13.924  INFO 5828 --- [http-nio-8080-exec-5] com.unal.teacher.TeacherController       : Teacher(id=11, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:22:07.0)
+2022-04-22 19:56:19.282  INFO 5828 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:19.283  INFO 5828 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:19.283  INFO 5828 --- [http-nio-8080-exec-6] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:56:21.937  INFO 5828 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=4, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:21.937  INFO 5828 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=5, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:52.0)
+2022-04-22 19:56:21.938  INFO 5828 --- [http-nio-8080-exec-7] com.unal.teacher.TeacherController       : Teacher(id=6, name=teacher name, surname=teacher surname, age=35, date=2022-04-22 19:14:53.0)
+2022-04-22 19:56:38.872  INFO 5828 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-22 19:56:38.875  INFO 5828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-04-22 19:56:38.881  INFO 5828 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
