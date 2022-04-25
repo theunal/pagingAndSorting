@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Ana Sayfa</title>
+  <!-- Bootstrap CSS v5.0.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
+
+    <script>
+        function myFunction() {
+            let x = document.getElementsByName("size").value;
+            if (isNaN(x) || x < 0 ) {
+                document.action = "/index";
+            } else {
+                document.getElementsByName("size").action = "/paging1";
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction2() {
+            let x = document.getElementsByName("page").value;
+            let y = document.getElementsByName("size").value;
+            if (isNaN(x) || x < 0) {
+                document.action = "/index";
+            } else if(isNaN(x) || x <= 0 ){
+                document.getElementsByName("page", "size").action = "/paging2";
+            }
+        }
+    </script>
+
+    <script>
+        function myFunction3() {
+            let x = document.getElementsByName("page").value;
+            let y = document.getElementsByName("size").value;
+            if (isNaN(x) || x < 0) {
+                document.action = "/index";
+            } else if(isNaN(x) || x <= 0 ){
+                document.getElementsByName("page", "size").action = "/paging2";
+            }
+        }
+    </script>
+
+</head>
+
+<body class="container">
+
+    <h1 class="text-center text-secondary mt-2 mb-2">Ana Sayfa</h1>
+
+    <!-- butonlar -->
+    <table class="mt-5 mx-auto">
+        <tr>
+            <td>
+                <!-- teacher ekle -->
+                <a href="/addTeacher" class="btn btn-light" target="_blank" title="Yeni Teacher Ekle">Teacher Ekle</a>
+
+            </td>
+            <td>
+                <!-- tüm liste -->
+                <a href="/getAll" class="btn btn-light" target="_blank" title="Tüm teacher Listesini Görüntüle">Teacher Listesi</a>
+            </td>
+            <td>
+                <!-- sıralama -->
+                <a href="/ascId" class="btn btn-light" target="_blank"
+                   title="Tüm teacher Listesini küçükten/büyüğe büyükten/küçüğe sırala">Sıralama</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- sadece size'a göre sırala -->
+    <form th:action="@{/paging1}">
+
+        <table class=" mt-4 w-25 mx-auto">
+
+            <!-- size -->
+            <tr>
+                <td> <input class="form-control text-center" style="width: 88%;" type="text" th:name="size" placeholder="Size" required/> </td>
+                <td> <button class="btn btn-light" onclick="myFunction()">Sırala</button> </td>
+            </tr>
+            <td colspan="2">
+                <p style="font-size: 11px;color: red;">Sadece size'a göre sıralar.</p>
+            </td>
+
+
+        </table>
+
+    </form>
+
+    <!-- page ve size'a göre sırala -->
+    <form th:action="@{/paging2}">
+
+        <table class=" mt-4 w-25 mx-auto">
+            <!-- page and size -->
+            <tr>
+                <td> <input class="form-control w-75 text-center"  type="text" th:name="page" placeholder="Page" required/> </td>
+                <td> <input class="form-control w-75 text-center"  type="text" th:name="size" placeholder="Size" required/> </td>
+                <td> <button class="btn btn-light" onclick="myFunction2()">Sırala</button> </td>
+            </tr>
+            <td colspan="3">
+                <p style="font-size: 11px;color: red;">Page ve size'a göre sıralar.</p>
+            </td>
+        </table>
+
+    </form>
+
+    <!-- page size sort -->
+    <form th:action="@{/ascIdps}">
+
+        <table class=" mt-4 w-25 mx-auto">
+
+            <tr>
+                <td> <input class="form-control w-75 text-center" type="text" th:name="page" placeholder="Page" required/> </td>
+                <td> <input class="form-control w-75 text-center" type="text" th:name="size" placeholder="Size" required/> </td>
+                <td> <button class="btn btn-light" onclick="myFunction3()">Sırala</button> </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <p style="font-size: 11px;color: red;">Page, size ve küçükten/büyüğe büyükten/küçüğe sıralar.</p>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>

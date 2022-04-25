@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html th:lang="${#locale.language}" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
+
+</head>
+<body class="container">
+
+
+    <h1 class="text-center text-secondary mt-2 mb-2">Teacher Ekle</h1>
+
+    <form th:method="post" th:object="${addKey}" th:action="@{/addTeacher}">
+
+
+        <div class="row mt-5">
+            <div class="col-md-1">Name:</div>
+            <div class="col-md-11">
+                <input class="form-control w-25" type="text"  id="name" th:field="*{name}">
+                <div th:if="${#fields.hasErrors('name')}"   th:errors="*{name}"
+                     style="font-size: 11px;color: red;"></div>
+            </div>
+        </div>
+
+
+        <div class="row mt-4">
+            <div class="col-md-1">Surname:</div>
+            <div class="col-md-11">
+                <input class="form-control w-25" th:type="text"  id="surname" th:field="*{surname}">
+                <div th:if="${#fields.hasErrors('surname')}"   th:errors="*{surname}"
+                     style="font-size: 11px;color: red;"></div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-1">Age:</div>
+            <div class="col-md-11">
+                <input class="form-control w-25" th:type="text"  id="age" th:field="*{age}">
+                <div th:if="${#fields.hasErrors('age')}"   th:errors="*{age}"
+                     style="font-size: 11px;color: red;"></div>
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-1"></div>
+            <div class="col-md-11">
+                <button class="btn btn-primary" type="submit">Gönder</button>
+                <button class="btn btn-warning" type="reset">Temizle</button>
+            </div>
+        </div>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Bootstrap JavaScript Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>
